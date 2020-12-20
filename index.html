@@ -1,43 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Button
-        </title>
-    </head>
-    <body style="background-color: black;">
-        <div style="margin-left: 40%; margin-top: 10%;">
-            <div id ="shape" style="height: 100px;width:200px;background-color: magenta;"></div>
+      <head>
+            <style>
+                button
+                {
+                    color: salmon;
+                    background-color: seagreen;
+                    border: none;
+                    border-radius: 50px;
+                }
+                body
+                {
+                    background-color: skyblue;
+                }
+            </style>
+            
+      </head>
+      <body>
+          <div style="margin-top: 15%; margin-left: 40%;">
+            <input type="number" placeholder="first number" id="fno" style="border: none;">
             <br>
-            <br>
-            <button onclick="rectangle()">Rectangle</button>
-            <br>
-            <button onclick="square()">Square</button>
-            <br>
-            <button onclick="circle()">Circle</button>
-            <br>
-         <script>
-            function rectangle(){  
+            <input type="number" placeholder="second number" id="sno" style="border: none;">
+            <h4 id="add">Result : </h4>
+            <button onclick="sum()">add</button>
+            <button onclick="subtract()">subtract</button>
+            <button onclick="multiply()">multiply</button>
+            <button onclick="division()">division</button>
+            <script>
+            function sum(){  
+                    
+                var fno=document.getElementById('fno').value;
+                var sno=document.getElementById('sno').value;
+        document.getElementById('add').innerText=Number(fno)+Number(sno);
+                }
+                function subtract(){  
                 
-                document.getElementById('shape').style['background-color']='red';
-                document.getElementById('shape').style['width']='200px';
-                document.getElementById('shape').style['height']='100px';
-                document.getElementById('shape').style['border-radius']='0%';
-                }   
-            function square(){  
-                document.getElementById('shape').style['width']='200px';
-                document.getElementById('shape').style['height']='200px';
-                document.getElementById('shape').style['background-color']='yellow';
-                document.getElementById('shape').style['border-radius']='0%';
-                
-                }   
-            function circle(){  
-                document.getElementById('shape').style['width']='200px';
-                document.getElementById('shape').style['height']='200px';
-                document.getElementById('shape').style['background-color']='green';
-                document.getElementById('shape').style['border-radius']='50%';
-                }   
-         </script>
+                var fno=document.getElementById('fno').value;
+                var sno=document.getElementById('sno').value;
+        document.getElementById('add').innerText=Number(fno)-Number(sno);
+                } 
+                function multiply(){  
+                    
+                var fno=document.getElementById('fno').value;
+                var sno=document.getElementById('sno').value;
+        document.getElementById('add').innerText=Number(fno)*Number(sno);
+                }
+                function division(){  
+                if(Number(sno)==0)
+                return sum.innerText = 'Not def'   
+                var fno=document.getElementById('fno').value;
+                var sno=document.getElementById('sno').value;
+                if(Number(sno)==0)
+                return document.getElementById('add').innerText  = 'Not def'
+        document.getElementById('add').innerText=Number(fno)/Number(sno);
+        
+                if(Number(sno)==0)
+                return document.getElementById('add').innerText  = 'Not def'
+                }
+        </script>
         </div>
-    </body>
+        </body>
 </html>
