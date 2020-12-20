@@ -1,1 +1,121 @@
-i
+
+Lenovo@LAPTOP-ETTGEJE8 MINGW64 /d/git
+$ git clone https://github.com/shubhamnayak3004/workshop.git
+Cloning into 'workshop'...
+warning: You appear to have cloned an empty repository.
+
+Lenovo@LAPTOP-ETTGEJE8 MINGW64 /d/git
+$ git config --global user.name "shubhamnayak3004"
+
+Lenovo@LAPTOP-ETTGEJE8 MINGW64 /d/git
+$ git config --global user.email "shubhamnayakemn@gmail.com"
+
+Lenovo@LAPTOP-ETTGEJE8 MINGW64 /d/git
+$ cd workshop
+
+Lenovo@LAPTOP-ETTGEJE8 MINGW64 /d/git/workshop (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        workshop.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lenovo@LAPTOP-ETTGEJE8 MINGW64 /d/git/workshop (master)
+$ git add .
+
+Lenovo@LAPTOP-ETTGEJE8 MINGW64 /d/git/workshop (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   workshop.txt
+
+
+Lenovo@LAPTOP-ETTGEJE8 MINGW64 /d/git/workshop (master)
+$ git commit -m "first commit"
+[master (root-commit) c847282] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 workshop.txt
+
+Lenovo@LAPTOP-ETTGEJE8 MINGW64 /d/git/workshop (master)
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+
+Lenovo@LAPTOP-ETTGEJE8 MINGW64 /d/git/workshop (master)
+$ git push origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 217 bytes | 217.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/shubhamnayak3004/workshop.git
+ * [new branch]      master -> master
+
+Lenovo@LAPTOP-ETTGEJE8 MINGW64 /d/git/workshop (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Lenovo@LAPTOP-ETTGEJE8 MINGW64 /d/git/workshop (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   workshop.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lenovo@LAPTOP-ETTGEJE8 MINGW64 /d/git/workshop (master)
+$ git add .
+
+Lenovo@LAPTOP-ETTGEJE8 MINGW64 /d/git/workshop (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   workshop.txt
+
+
+Lenovo@LAPTOP-ETTGEJE8 MINGW64 /d/git/workshop (master)
+$ git commit -m "second commit"
+[master 69d6875] second commit
+ 1 file changed, 1 insertion(+)
+
+Lenovo@LAPTOP-ETTGEJE8 MINGW64 /d/git/workshop (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Lenovo@LAPTOP-ETTGEJE8 MINGW64 /d/git/workshop (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 246 bytes | 246.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/shubhamnayak3004/workshop.git
+   c847282..69d6875  master -> master
+
+Lenovo@LAPTOP-ETTGEJE8 MINGW64 /d/git/workshop (master)
+$
