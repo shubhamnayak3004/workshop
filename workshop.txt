@@ -16,7 +16,7 @@ $ cd workshop
 Lenovo@LAPTOP-ETTGEJE8 MINGW64 /d/git/workshop (master)
 $ git status
 On branch master
-
+ccc
 No commits yet
 
 Untracked files:
