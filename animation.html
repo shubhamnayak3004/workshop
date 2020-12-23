@@ -13,11 +13,11 @@
                 background-attachment: fixed;
                 background-size: 100% 100%;
                 transform: rotate(30deg);
-                animation: daynight 20s infinite;
+                animation: daynight 25s infinite;
             }
             @keyframes daynight {
                 0% { background-image: url('depositphotos_1385215-stock-illustration-night-sky-and-stars.jpg');}
-                70% {background-image: url('istockphoto-1082428994-170667a.jpg');}
+                90% {background-image: url('istockphoto-1082428994-170667a.jpg');}
                 100% {background-image: url('Cloudy-and-blue-morning-sky-patternpictures-1611.jpg');}
                 }
             
@@ -29,8 +29,8 @@
                 background-color: white;
                 border-radius: 10%;
                 filter: drop-shadow(0 0 6px yellow);
-                animation: ss 10s ease-in-out infinite ,
-                            f 10s ease-in-out infinite;
+                animation: ss 15s ease-in-out infinite ,
+                            f 15s ease-in-out infinite;
                            
             }
             @keyframes ss {
@@ -48,31 +48,7 @@
                     }
                 }    
 
-                .sun {
-  position: relative;
-  width: 75px;
-  height: 75px;
-  background-size: 200% 200%;
-  border-radius: 100%;
-  animation: 20s rise infinite;
-}
-@keyframes rise {
-  0% {
-    top: 100px;
-    background-position: 50% 0%;
-    background-image: none;
-  }
-  50% {
-    top: 800px;
-    background-image: linear-gradient(to top, #fb6753 0%,#fc8b53 50%,#fdd55a 100%);
-
-    background-position: 50% 100%;
-  }
-  100% {
-    top: 500px;
-    background-position: 50% 0%;
-  }
-}
+                
         </style>
     </head>
     <body class="bg">
