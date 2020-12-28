@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            DTU Student Data
+        </title>
+        <style>
+            .wallpaper
+                {
+                    background-image:  url('5f02f2e63596435bb3fdccd9a65a753f.gif');
+                    background-attachment: fixed;
+                    background-size: 100%;
+                    animation-name: gradient;
+                }            
+
+        </style>
+    </head>
+    <body class="wallpaper">
+        <div style="margin-top: 10%; margin-left: 40%;">
+                    <table id='stu' style="background-color: wheat;">
+                        <tr style="background-color: aqua; text-align: center;"> 
+                            <td colspan="4">
+                                Student
+                            </td>
+                        </tr>
+                        <tr style="background-color: aqua; text-align: center;">
+                            <td>Name</td>
+                            <td>Student ID</td>
+                            <td>Batch</td>
+                            <td>Branch</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <br>
+                    <table id='tea' style="background-color: wheat;">
+                        <tr style="background-color: aqua; text-align: center;">
+                            <td colspan="3">
+                                Teacher
+                            </td>
+                        </tr>
+                        <tr style="background-color: aqua; text-align: center; text-emphasis: bold;">
+                            <td>Name</td>
+                            <td>Employee ID</td>
+                            <td>Subject Code</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <br>
+                    <button onclick="gd()" style="margin-left: 10%; border-radius: 15%; background-color: red ; color: white; height: 50px">Get Details</button>
+                    <script>
+                            var dtu = {
+                                student : [],
+                                teacher : []
+                            }
+                            dtu.student.push({'Name': 'Shubham', 'StudentID': '101', 'Batch' : '2023', 'Branch' : 'ME'})
+                            dtu.student.push({'Name': 'Yash', 'StudentID': '255', 'Batch' : '2022', 'Branch' : 'COE'})
+                            dtu.student.push({'Name': 'Muskan', 'StudentID': '303', 'Batch' : '2021', 'Branch' : 'COE'})
+                            dtu.student.push({'Name': 'Divya', 'StudentID': '342', 'Batch' : '2021', 'Branch' : 'SE'})
+                            dtu.student.push({'Name': 'Pranav', 'StudentID': '125', 'Batch' : '2023', 'Branch' : 'CE'})
+                            dtu.student.push({'Name': 'Vipul', 'StudentID': '042', 'Batch' : '2024', 'Branch' : 'ME'})
+                            dtu.student.push({'Name': 'Ankita', 'StudentID': '298', 'Batch' : '2022', 'Branch' : 'MC'})
+                            dtu.teacher.push({'Name': 'Samsher', 'EmployeeID': 'ME231', 'SubjectCode': 'ME-201'})
+                            dtu.teacher.push({'Name': 'Goonjan', 'EmployeeID': 'AM342', 'SubjectCode': 'AM-101'})
+                            dtu.teacher.push({'Name': 'Sivaprasad', 'EmployeeID': 'SE521', 'SubjectCode': 'SE- 323'})
+                            dtu.teacher.push({'Name': 'Deepa', 'EmployeeID': 'AP210', 'SubjectCode': 'AP-102'})
+                            dtu.teacher.push({'Name': 'Saaransh', 'EmployeeID': 'CO-402', 'SubjectCode': 'CO-201'})
+                            var s=document.getElementById('stu')
+                            var t=document.getElementById('tea')
+                            var click = 0
+                            function gd()
+                            {       if (click==0)
+                                    {
+                                        for(var i=0; i<dtu.student.length;++i)
+                                        s.innerHTML+='<tr><td>'+dtu.student[i].Name+'</td><td>'+dtu.student[i].StudentID+'</td><td>'+dtu.student[i].Batch+'</td><td>'+dtu.student[i].Branch+'</td></tr>'
+                                        for(var j=0; j<dtu.teacher.length;++j)
+                                        t.innerHTML+='<tr><td>'+dtu.teacher[j].Name+'</td>'+'<td>'+dtu.teacher[j].EmployeeID+'</td><td>'+dtu.teacher[j].SubjectCode+'</td></tr>'                
+                                    click += 1
+                                    }
+                                    else
+                                    {
+                                        window.alert('Details Displayed Already!')
+                                    }
+                                    
+                            }
+                        
+                    </script>
+    </body>
+</html>

@@ -4,16 +4,9 @@
         <title>
             To Do List
         </title>
-        <style>
-            tble
-            {
-                border: 3;
-                border-radius: 40%;
-                border-color: blanchedalmond;
-            }
-        </style>
     </head>
-    <body>
+    <body style="background-color: red;">
+        <div style= "margin-left: 40%; margin-top: 12%;">
         <input type="text" id="sno" placeholder="Task Number"> 
         <br>
         <input type="text" id="task" placeholder="Task">
@@ -21,10 +14,10 @@
         <input type="text" id="status" placeholder="Status">
         <br>
         <br>
-        <button onclick="commit()"> Commit</button>
+        <button onclick="commit()" style="background-color: skyblue; color: blue; height: 20%; margin-left: 6%;"> Commit</button>
         <br>
         <br>
-        <table id='table' class="tble">
+        <table id='table' style="background-color: greenyellow; border-color: green;" border="1" >
             <tr>
                 <td>S.No.</td>
                 <td>Task</td>
@@ -41,5 +34,6 @@
                 table.innerHTML+="<tr><td>"+sno+"</td><td>"+task+"</td><td>"+status+"</td></tr>" 
             }
         </script>
+        </div>
     </body>
 </html>
